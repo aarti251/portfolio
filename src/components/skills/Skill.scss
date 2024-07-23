@@ -1,0 +1,91 @@
+@import "../../app.scss";
+
+.skill {
+ padding-top: 2px;
+  width: 100%;
+  height: 95%;
+  position: relative;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+ 
+  }
+  .item{
+   
+    width: 270px;
+  }
+  .styled-hr{
+    width: 100wh;
+   
+    padding: 4px;
+    
+    background-color: #B8B8B8;
+  }
+  .skill-bx {
+   
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+  }
+  .skill h2 {
+    font-size: 36px;
+      font-weight: 700;
+      position: sticky;
+     padding-bottom: 10px;
+      
+      text-align: center;
+      color: orange;
+      font-size: 36px;
+  }
+  .skill p {
+      color: #B8B8B8;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      margin: 14px 0 75px 0;
+  }
+  .skill-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .skill-slider .item img {
+    width: 50%;
+    margin: 0 auto 15px auto;
+    filter: drop-shadow(1px  4px 0px  rgb(185, 185, 132));
+  }
+  .background-image-left {
+    top: 28%;
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    z-index: -4;
+  }
+  
+  //media query
+
+  @media (max-width:412px) {
+    .skill p {
+      color: #B8B8B8;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      line-height: 1.5em;
+     padding: 10px;
+     margin-bottom: 8px;
+  }
+  .skill-slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .skill-slider .item img {
+    width: 90%;
+    margin: -10px auto 15px auto;
+    filter: drop-shadow(1px  4px 0px  rgb(185, 185, 132));
+  }
+  .item h5{
+    font-size: 30px;
+  }
+  }

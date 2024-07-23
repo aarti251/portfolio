@@ -1,0 +1,159 @@
+@import "../../app.scss";
+
+.portfolio {
+ 
+  position: relative;
+ 
+  .styled-hr{
+    width: 100wh;
+   
+    padding: 4px;
+    
+    background-color: #B8B8B8;
+  }
+.progress h2{
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    text-align: center;
+    color: orange;
+    font-size: 30px;
+
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+      font-size: 24px;
+    }
+
+    .progressBar {
+      height: 10px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+
+    .wrapper {
+      max-width: 1360px;
+      height: 100%;
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+
+      
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          border-radius: 10px;
+
+         
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+       
+
+       
+        h2 {
+          padding-top: 80px;
+          font-size: 50px;
+          text-decoration: underline;
+
+          @include mobile {
+            font-size: 25px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 300px;
+          margin-left: 100px;
+        
+          cursor: pointer;
+        }
+
+        button span{
+        font-size: 15px;
+        color: rgb(14, 36, 240);
+        }
+      }
+    }
+  }
+}
+
+
+
+//medea query
+
+@media (max-width:412px) {
+ .progress h2{
+  margin-top: -700px;
+ }
+ .imageContainer{
+  
+  margin-top: 300px;
+  padding: 4px 80px 5px 80px;
+  border-radius: 10px;
+ } 
+ .imageContainer img{
+  object-fit:fill ;
+  width: 60px;
+ }
+ .textContainer{
+ 
+  margin-top: 50px;
+ 
+ }
+ .textContainer h2{
+  margin: 10px 0px 0px 100px;
+ 
+ 
+ }
+ .textContainer p{
+ padding: 1px 5px  0px 100px;
+ }
+ button{
+  background: #000;
+    
+  }
+}
